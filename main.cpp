@@ -3,7 +3,7 @@
 using namespace std;
 int main(int argc, char const *argv[])
 {
-    Foco f;
+    Foco foquito;
     cout<<"hola mundo"<<endl;
     return 0;
 }
