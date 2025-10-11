@@ -1,4 +1,5 @@
 #include<iostream>
+#include <memory>
 using namespace std;
 
 class Empleado{
@@ -35,5 +36,20 @@ int main(int argc, char const *argv[])
     int a= 64;
     char b= (char) a;
     cout << b << endl;
+    //Punteros C y C++
+    int* dirA = (int*)malloc(sizeof(int)); //C
+    *dirA = 24;
+    free(dirA);
+
+    int* dirB = new int(24);             //C++
+    delete dirB;
+
+    unique_ptr<int> dirC;
+
+    cout << *dirA << endl;
+    cout << *dirB << endl;
+
+    
+
     return 0;
 }
